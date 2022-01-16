@@ -5,9 +5,13 @@ require './lib/enigma'
 RSpec.describe Enigma  do
   describe '#setup' do
     it 'exists' do
-    enigma_trial = Enigma.new
+    enigma = Enigma.new
 
-    expect(enigma_trial).to be_a(Enigma)
+    expect(enigma).to be_a(Enigma)
     end
+
+    # it 'can take 3 arguments' do
+    #
+    # enigma = Enigma.new
   end
 end
