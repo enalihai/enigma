@@ -10,12 +10,15 @@ git@github.com:enalihai/enigma.git
 ___Directory___
 ```
 ___Class Files___
-
+encrypt.rb
+enigma.rb
 
 ___Spec Files___
+encrypt_spec.rb
+enigma_spec.rb
+spec_helper.rb
 
 ___Data Files___
-
 
 ___Misc Files___
 README.md - teehee its the readme silly!
@@ -33,4 +36,4 @@ Luke Pascale
 github: enalihai
 email: lpluke5@gmail.com
 ```
-If you wish to contribute, please reach out to us!
+If you wish to contribute, please reach out to me!
