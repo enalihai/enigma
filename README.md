@@ -10,8 +10,13 @@ git@github.com:enalihai/enigma.git
 ___Directory___
 ```
 ___Class Files___
+encrypt.rb
+enigma.rb
 
 ___Spec Files___
+encrypt_spec.rb
+enigma_spec.rb
+spec_helper.rb
 
 ___Data Files___
 
