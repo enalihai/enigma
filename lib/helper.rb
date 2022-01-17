@@ -1,11 +1,17 @@
+require 'pry'
+require 'date'
+
 module Helper
-  # def date
-  # end
-  #
-  # def key_master
-  #  rand(99999)
-  # end
-  #
+  # attr_reader :key_master, :date_generator
+
+  def date_generator(date)
+    date = Date.today.to_s
+  end
+
+  def key_master(key)
+    key = rand(99999).to_s
+  end
+
   # def shift_generator
   # end
   #

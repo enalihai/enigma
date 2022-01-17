@@ -12,6 +12,7 @@ ___Directory___
 ___Class Files___
 encrypt.rb
 enigma.rb
+helper.rb
 
 ___Spec Files___
 encrypt_spec.rb
@@ -19,10 +20,12 @@ enigma_spec.rb
 spec_helper.rb
 
 ___Data Files___
+.gitignore
 
 ___Misc Files___
 README.md - teehee its the readme silly!
 Gemfile -
+Gemfile.lock 
 ```
 
 ___Known Bugs/Errors___
