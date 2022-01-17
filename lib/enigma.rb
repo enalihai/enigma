@@ -10,13 +10,12 @@ class Enigma
     @character_set = ("a".."z").to_a << " "
   end
 
-  def encrypt(message, key, date)
+  def encrypt(message, key = key_master, date = Date.today)
     # takes a message String as an argument. key/date are optional
-    # @enigma.each do |encryption|
-    # end
-    message = message
-    key = key_master(key)
-    date = date_generator(date)
+     offset_generator
+     # shift_generator
+     # key
+     # offset = date.today
   end
 
   # def decrypt
