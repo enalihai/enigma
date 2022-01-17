@@ -2,19 +2,17 @@ require 'pry'
 require 'date'
 
 module Helper
-  # def date_generator(date = Date.today)
-  #   date = Date.today
-  # end.to_s
 
   def key_master
     key = rand(99999).to_s
   end
 
   def shift_generator(key = key_master)
-    # key is coming in as a number, so turn key into an array of numbers. will need accumulator as an array. for each element of your accumulator ie) 0,3,4, shovel 0/1 1/2 2/3 3/4. return the accumulator.
-    # encrypt hash with string of ABCD = 
+  #   # key is coming in as a number, so turn key into an array of numbers. will need accumulator as an array. for each element of your accumulator ie) 0,3,4, shovel 0/1 1/2 2/3 3/4. return the accumulator.
+  #   # encrypt hash with string of ABCD =
+    shift_array = []
+    shift_array << key.to_s.chars.map(&:to_i)
   end
-  # create 2 new methods, returning hash of encrypt and the other of decrypt hash.
 
   def offset_generator(date = Date.today)
     if date.class == Date
@@ -24,4 +22,5 @@ module Helper
       (date.to_i ** 2).to_s.split('').last(4)
     end.join
   end
+  # create 2 new methods, returning hash of encrypt and the other of decrypt hash.
 end

@@ -18,22 +18,6 @@ RSpec.describe Enigma  do
       expect(enigma.character_set).to eq(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " "])
     end
 
-    xit 'can read keys and dates' do
-      enigma = Enigma.new
-      enigma.encrypt("hello world", "02715", "040895")
-
-    end
-
-    xit 'can take 3 arguments and encrypt them' do
-      enigma = Enigma.new
-      enigma.encrypt("hello world", "02715", "040895")
-
-      expect(enigma.encrypt("hello world", "02715", "040895")).to eq({
-        encryption: "keder ohulw",
-        key: "02715",
-        date: "040895"
-          })
-    end
 
     it 'is optional to include key and date' do
       enigma = Enigma.new
@@ -57,6 +41,24 @@ RSpec.describe Enigma  do
       enigma.encrypt("hello world", "02715", "040895")
 
       expect(enigma.offset_generator.length).to eq(4)
+    end
+
+    it 'can determine the shift for the encryption' do
+      enigma = Enigma.new
+      enigma.encrypt("hello world", "02715", "040895")
+
+      expect(enigma.shift_generator.length).to eq(5)
+    end
+
+    xit 'can encrypt the message' do
+      enigma = Enigma.new
+      enigma.encrypt("hello world", "02715", "040895")
+
+      expect(enigma.encrypt("hello world", "02715", "040895")).to eq({
+        encryption: "keder ohulw",
+        key: "02715",
+        date: "040895"
+        })
     end
   end
 end

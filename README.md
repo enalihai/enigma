@@ -7,6 +7,15 @@ In order to download all the information to your machine, please clone the follo
 git@github.com:enalihai/enigma.git
 ```
 
+___Known Bugs/Errors___
+```
+___Personal Grading of Project___
+Functionality - 1
+Object Oriented Programming - 1
+Ruby Conventions and Mechanics - 1
+Test Driven Development - 3
+```
+
 ___Directory___
 ```
 ___Class Files___
@@ -25,13 +34,9 @@ ___Data Files___
 ___Misc Files___
 README.md - teehee its the readme silly!
 Gemfile -
-Gemfile.lock 
+Gemfile.lock
 ```
 
-___Known Bugs/Errors___
-```
-
-```
 
 ___Contributors___
 ```
