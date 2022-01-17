@@ -1,19 +1,21 @@
 require 'date'
-require './lib/helper'
+require './lib/helper.rb'
+require 'pry'
+
 class Enigma
   include Helper
   attr_reader :character_set
-  
+
   def initialize
     @character_set = ("a".."z").to_a << " "
   end
 
-  def encrypt(message, key, date)
+  def encrypt(message, key = key_master, date = Date.today)
     # takes a message String as an argument. key/date are optional
-
-    # @message = message
-    # @key = key
-    # @date = date
+     offset_generator
+     # shift_generator
+     # key
+     # offset = date.today
   end
 
   # def decrypt
